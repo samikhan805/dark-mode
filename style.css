@@ -1,0 +1,65 @@
+* {
+  font-family: 'Ubuntu', Sans-Serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+  transition: 0.5s;
+}
+body.active {
+  background: #292929;
+  color: #fff;
+}
+h2 {
+  text-align: center;
+  margin: 0 auto 1rem;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 2rem auto 1rem;
+  padding: 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  border: 1px solid #292929;
+}
+.button .main-btn {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 35px;
+  border-radius: 20px;
+  background: #292929;
+  left: 1.5px;
+  transition: 0.5s;
+}
+.button.active {
+  background: #292929;
+  border: 1px solid #fff;
+} 
+.button.active .main-btn {
+  left: 37px;
+  background: #fff;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+}
+.container p {
+  text-align: justify;
+}
+
+.end {
+  text-align: center;
+  margin: 3rem auto 0;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
